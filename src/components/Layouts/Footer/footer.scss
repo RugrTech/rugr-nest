@@ -1,0 +1,85 @@
+.footer-container {
+    background: #343C3A;
+    .footer-block {
+        background-image: url(src/assets/footer-image.svg);
+        background-repeat: no-repeat;
+        background-position-x: 450px;
+        background-position-y: center;
+        background-size: 80%;
+        padding-block: 120px;
+    }
+    .footer-logo {
+        width: 600px;
+    }
+    .footer-btn {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        a {
+            color: var(--white-color);
+            font-family: var(--secondary-font);
+            font-size: clamp(16px, 3vw, 20px);
+            font-weight: 700;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .footer-text {
+        color: var(--white-color);
+        font-family: var(--secondary-font);
+        font-size: clamp(16px, 3vw, 20px);
+        font-weight: 300;
+        padding-top: 30px;
+    }
+    .social-media-block {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding-top: 30px;
+        .social-media-icon {
+            font-size: 34px;
+            &:hover {
+                &::before {
+                    color: #53C6A3;
+                }
+            }
+        }
+    }
+    .copy-right {
+        color: var(--white-color);
+        font-size: 16px;
+        font-weight: 400;
+        font-family: var(--primary-font);
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 820px) {
+    .footer-container {
+        background-image: url(src/assets/footer-image.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: 220px;
+        .footer-block {
+            background-image: unset;
+            padding-block: 60px;
+        }
+        .footer-btn {
+            padding-top: 30px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-container {
+        background-position-x: 60px;
+        .footer-block {
+            padding-block: 30px;
+        }
+        .footer-logo {
+            width: 250px;
+        }
+    }
+}
