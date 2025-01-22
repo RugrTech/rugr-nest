@@ -52,3 +52,26 @@ body {
 }
 
 // custom scrollbar ends here
+
+// section css 
+
+.section-header {
+	color: #1DA42C;
+	font-size: clamp(16px, 3vw, 32px);
+	font-weight: 400;
+	font-family: var(--primary-font);
+}
+
+.section-text {
+	color: #2A2A2A;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: var(--primary-font);
+}
+
+.section-subtext {
+	color: #2A2A2A;
+	font-size: 12px;
+	font-weight: 400;
+	font-family: var(--primary-font);
+}

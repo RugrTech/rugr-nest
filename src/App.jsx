@@ -6,6 +6,7 @@ import { Home } from './components/Pages/Home/Home';
 import { Aboutus } from './components/Pages/Aboutus/about-us';
 import './App.css'
 import './index.scss';
+import { Testimoinials } from './components/Pages/Testimonials/testimonials';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<Aboutus />} />
+          <Route path="/testimonials" element={<Testimoinials />} />
         </Routes>
       </main>
       <Footer/>
