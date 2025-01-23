@@ -33,13 +33,13 @@ export const Footer = () => {
                 <div className="footer-text">1800 410 4555</div>
                 <div className="social-media-block">
                   <a href="">
-                    <i class="icon-linked-in social-media-icon"></i>
+                    <i className="icon-linked-in social-media-icon"></i>
                   </a>
                   <a href="">
-                    <i class="icon-twitter social-media-icon"></i>
+                    <i className="icon-twitter social-media-icon"></i>
                   </a>
                   <a href="">
-                    <i class="icon-website social-media-icon"></i>
+                    <i className="icon-website social-media-icon"></i>
                   </a>
                 </div>
               </Col>

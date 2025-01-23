@@ -57,7 +57,7 @@ body {
 
 .section-header {
 	color: #1DA42C;
-	font-size: clamp(16px, 3vw, 32px);
+	font-size: clamp(20px, 3vw, 32px);
 	font-weight: 400;
 	font-family: var(--primary-font);
 }
@@ -74,4 +74,5 @@ body {
 	font-size: 12px;
 	font-weight: 400;
 	font-family: var(--primary-font);
+	padding-top: 10px;
 }
