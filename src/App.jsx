@@ -4,9 +4,9 @@ import { Header } from './components/Layouts/Header/header';
 import { Footer } from './components/Layouts/Footer/footer';
 import { Home } from './components/Pages/Home/Home';
 import { Aboutus } from './components/Pages/Aboutus/about-us';
+import { Testimoinials } from './components/Pages/Testimonials/testimonials';
 import './App.css'
 import './index.scss';
-import { Testimoinials } from './components/Pages/Testimonials/testimonials';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <Header/>
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />}/>
           <Route path="/about-us" element={<Aboutus />} />
           <Route path="/testimonials" element={<Testimoinials />} />
         </Routes>
