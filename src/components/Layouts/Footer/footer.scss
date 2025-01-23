@@ -1,12 +1,22 @@
 .footer-container {
     background: #343C3A;
     .footer-block {
-        background-image: url(src/assets/footer-image.svg);
-        background-repeat: no-repeat;
-        background-position-x: 450px;
-        background-position-y: center;
-        background-size: 80%;
-        padding-block: 120px;
+        padding-block: 60px;
+        position: relative;
+        z-index: 1;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: -210px;
+            right: 0px;
+            bottom: 0px;
+            background-image: url(src/assets/footer-image.svg);
+            background-repeat: no-repeat;
+            background-position-y: 23%;
+            background-size: 70%;
+            z-index: -1;
+        }
     }
     .footer-logo {
         width: 600px;
@@ -15,11 +25,12 @@
         display: flex;
         align-items: center;
         gap: 60px;
+        padding-top: 30px;
         a {
             color: var(--white-color);
             font-family: var(--secondary-font);
-            font-size: clamp(16px, 3vw, 20px);
-            font-weight: 700;
+            font-size: 16px;
+            font-weight: 300;
             text-decoration: none;
             &:hover {
                 text-decoration: underline;
@@ -48,11 +59,14 @@
         }
     }
     .copy-right {
+        background-color: var(--black-color);
         color: var(--white-color);
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 300;
         font-family: var(--primary-font);
-        padding-top: 30px;
+        padding: 20px;
+        position: relative;
+        z-index: 2;
     }
 }
 
@@ -61,10 +75,11 @@
         background-image: url(src/assets/footer-image.svg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position-x: 220px;
         .footer-block {
-            background-image: unset;
             padding-block: 60px;
+            &::before {
+                background-image: unset;
+            }
         }
         .footer-btn {
             padding-top: 30px;
@@ -80,6 +95,11 @@
         }
         .footer-logo {
             width: 250px;
+        }
+        .footer-btn {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
         }
     }
 }
