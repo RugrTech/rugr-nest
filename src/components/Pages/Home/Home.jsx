@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import "./Home.scss";
-import { Container, Row, Col } from "react-bootstrap";
 
 // images
 import people from "src/assets/banner-people.svg";
