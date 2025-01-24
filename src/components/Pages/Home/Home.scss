@@ -731,7 +731,7 @@
     display: flex;
 
     .contact-left-section {
-        width: 50%;
+        width: 53.9%;
         display: flex;
         justify-content: end;
         padding-block: 60px;
@@ -852,7 +852,7 @@
     .contact-right-section {
         position: sticky;
         top: 80px;
-        width: 50%;
+        width: 46.1%;
         height: calc(100vh - 80px);
         display: flex;
         justify-content: center;
@@ -918,6 +918,17 @@
 
 // Media query starts here 
 
+@media (min-width:1920px) {
+    .contact-us-section {
+        .contact-left-section {
+           width: 52.5%;
+        }
+        .contact-right-section {
+           width: 47.5%;
+            
+        }
+}
+}
 @media (min-width: 992px) {
     .form-container {
         width: 84%;
