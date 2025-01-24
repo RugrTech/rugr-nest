@@ -213,6 +213,9 @@
 
     }
 
+
+
+
     .card-holder-2 {
         padding-bottom: 180px;
 
@@ -254,6 +257,11 @@
             background: rgba(255, 255, 255, 0.18);
             backdrop-filter: blur(5.449999809265137px);
             padding: 8px 24px;
+            font-weight: 400;
+        }
+        span{
+            font-weight: 700;
+
         }
     }
 
@@ -326,6 +334,106 @@
     }
 
 
+}
+
+.home-about-us{
+    .abt-content{
+            padding: 80px 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 27px;
+           h3{
+            color: #1DA42C;
+            font-family: Montserrat;
+            font-size: 32px;
+            font-weight: 300;
+            line-height: 36px; /* 100% */
+           }
+           h2{
+            color: #2A2A2A;
+            font-family: Montserrat;
+            font-size: 32px;
+            font-weight: 400;
+            
+           }
+           P{
+            color: #2A2A2A;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 27px */
+           }
+           a{
+            color: #198425;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 100%;
+            text-decoration: none;
+           }
+           .footer-section {
+    
+
+            .view-more-btn {
+                display: flex;
+                align-items: center;
+                background-color: transparent;
+                border: none;
+                color: #198425;
+                font-family: var(--secondary-font);
+                font-size: 16px;
+                font-weight: 500;
+                gap: 12px;
+                text-decoration: none;
+
+                .btn-block {
+                    display: flex;
+                    flex-direction: column;
+                    line-height: 16px;
+                }
+
+                .view-more-underline {
+                    display: inline-flex;
+                    height: 1px;
+                    background-image: linear-gradient(to right, #198425, #B1E5B7);
+                    width: 0;
+                }
+
+                .icon-block {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 24px;
+                    width: 24px;
+                }
+
+                &:hover {
+                    color: #13541A;
+
+                    .view-more-underline {
+                        width: 100%;
+                        transition-duration: 0.4s;
+                    }
+
+                    .icon-block {
+                        background-color: #198425;
+                        border-radius: 50%;
+
+                        .icon-right-arrow {
+                            transform: rotate(-45deg);
+                            transition-duration: 0.4s;
+
+                            &::before {
+                                color: var(--white-color);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } 
 }
 
 // testimonial section starts here
@@ -961,6 +1069,21 @@
                     }
                 }
             }
+        }
+    }
+
+    .home-about-us .abt-content {
+        padding: 15px 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+
+        h3 {
+            color: #1DA42C;
+            font-size: 22px ;
+        }
+        h2{
+            font-size: 22px;
         }
     }
 
