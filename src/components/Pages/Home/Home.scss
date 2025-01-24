@@ -761,13 +761,21 @@
             border: none;
         }
 
-        .form-input::placeholder {
+        .form-input::placeholder, .PhoneInputInput::placeholder {
             color: #BFBFBF;
             font-size: clamp(12px, 5vw, 16px);
         }
 
-        .form-input:focus-visible {
+        .form-input:focus-visible, .PhoneInputInput:focus-visible {
             outline: none !important;
+        }
+
+        .PhoneInputInput {
+            border: none;
+            border-left: 1px solid #D9D9D9;
+            background-color: #F5F7F8;
+            padding-left: 10px;
+            margin-left: 10px;
         }
 
         .form-text-area {

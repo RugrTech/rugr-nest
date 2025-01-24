@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
+import PhoneInput from 'react-phone-number-input';
+import 'react-phone-number-input/style.css';
 import "./Home.scss";
 
 // images
@@ -56,6 +58,8 @@ export const Home = () => {
       imageUrl: "src/assets/client-4.svg",
     },
   ];
+
+  const [value, setValue] = useState()
 
   return (
     <>
@@ -325,11 +329,7 @@ export const Home = () => {
                 <label for="" className="form-label">
                   Phone No. <span className="text-danger">*</span>
                 </label>
-                <input
-                  type="text"
-                  className="form-input"
-                  placeholder="Enter Your Phone Number"
-                />
+                <PhoneInput className="form-input" placeholder="Enter Your Mobile Number" value={value} onChange={setValue}/>
               </div>
               <div className="form-block">
                 <label for="" className="form-label">
