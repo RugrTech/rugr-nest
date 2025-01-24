@@ -276,6 +276,215 @@ export const Home = () => {
                          </Row>
                     </Container >
                </section>
+
+               {/* contact-us section */}
+      <section className="contact-us-section">
+        <div className="contact-left-section">
+          <div className="form-container">
+            <div className="header-section">
+              <h2 className="section-header">Reach Out to Us!</h2>
+              <p className="section-subtext">
+                Get a free session on how you can boost-up your business ideas
+                or startups. Explore our incubation process and lets rock and
+                roll.
+              </p>
+            </div>
+            <form action="">
+              <div className="form-block">
+                <label for="" className="form-label">
+                  Full Name <span className="text-danger">*</span>
+                </label>
+                <input
+                  type="text"
+                  className="form-input"
+                  placeholder="Enter Your Name"
+                />
+              </div>
+              <div className="form-block">
+                <label for="" className="form-label">
+                  Email <span className="text-danger">*</span>
+                </label>
+                <input
+                  type="text"
+                  className="form-input"
+                  placeholder="Enter Your Email"
+                />
+              </div>
+              <div className="form-block">
+                <label for="" className="form-label">
+                  Phone No. <span className="text-danger">*</span>
+                </label>
+                <input
+                  type="text"
+                  className="form-input"
+                  placeholder="Enter Your Phone Number"
+                />
+              </div>
+              <div className="form-block">
+                <label for="" className="form-label">
+                  Entity <span className="text-danger">*</span>
+                </label>
+                <div className="d-flex align-items-center gap-4">
+                  <label className="radio-block">
+                    <div className="form-check">
+                      <input
+                        className="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault1"
+                      />
+                      <label className="form-check-label" for="flexRadioDefault1">
+                        Individual
+                      </label>
+                    </div>
+                  </label>
+                  <label className="radio-block">
+                    <div className="form-check">
+                      <input
+                        className="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault2"
+                      />
+                      <label className="form-check-label" for="flexRadioDefault2">
+                        Company
+                      </label>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div className="form-block">
+                <label for="" className="form-label">
+                  Country <span className="text-danger">*</span>
+                </label>
+                <div className="dropdown product-dropdown">
+                  <button
+                    className="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <span className="d-inline-flex">Select the product</span>
+                    <div className="d-flex">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="40"
+                        height="40"
+                        viewBox="0 0 57 56"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M30.2495 33.918C29.812 34.3554 29.2186 34.6012 28.5999 34.6012C27.9811 34.6012 27.3878 34.3554 26.9502 33.918L20.3492 27.317C20.0228 26.9905 19.8006 26.5746 19.7107 26.1218C19.6208 25.669 19.6672 25.1998 19.844 24.7734C20.0209 24.347 20.3203 23.9826 20.7042 23.7264C21.0882 23.4702 21.5396 23.3336 22.0012 23.334H35.1985C35.6601 23.3336 36.1115 23.4702 36.4955 23.7264C36.8794 23.9826 37.1788 24.347 37.3557 24.7734C37.5325 25.1998 37.5789 25.669 37.489 26.1218C37.3991 26.5746 37.1769 26.9905 36.8505 27.317L30.2495 33.918Z"
+                          fill="#189B73"
+                        />
+                      </svg>
+                    </div>
+                  </button>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <a className="dropdown-item">Card Issuance</a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item">Banking</a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item">Payment Services</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="form-block">
+                <label for="" className="form-label">
+                  Looking For <span className="text-danger">*</span>
+                </label>
+                <div className="dropdown product-dropdown">
+                  <button
+                    className="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <span>Select the product</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="40"
+                      height="40"
+                      viewBox="0 0 57 56"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M30.2495 33.918C29.812 34.3554 29.2186 34.6012 28.5999 34.6012C27.9811 34.6012 27.3878 34.3554 26.9502 33.918L20.3492 27.317C20.0228 26.9905 19.8006 26.5746 19.7107 26.1218C19.6208 25.669 19.6672 25.1998 19.844 24.7734C20.0209 24.347 20.3203 23.9826 20.7042 23.7264C21.0882 23.4702 21.5396 23.3336 22.0012 23.334H35.1985C35.6601 23.3336 36.1115 23.4702 36.4955 23.7264C36.8794 23.9826 37.1788 24.347 37.3557 24.7734C37.5325 25.1998 37.5789 25.669 37.489 26.1218C37.3991 26.5746 37.1769 26.9905 36.8505 27.317L30.2495 33.918Z"
+                        fill="#189B73"
+                      />
+                    </svg>
+                  </button>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <a className="dropdown-item">Card Issuance</a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item">Banking</a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item">Payment Services</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="form-block">
+                <label for="" className="form-label">
+                  How can we help you?
+                </label>
+                <textarea
+                  name=""
+                  id=""
+                  className="form-input form-text-area"
+                  placeholder="Write your Query here..."
+                ></textarea>
+              </div>
+              <div className="d-flex align-items-center justify-content-end">
+                <Button variant="" className="primary-btn">
+                  Submit
+                </Button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div className="contact-right-section">
+          <div className="counter-card-container">
+            <div className="counter-card-block">
+              <div className="counter-card">
+                <div className="count-text">
+                  <span className="counter" data-target="3">
+                    34
+                  </span>
+                  <span>&nbsp;&nbsp;+</span>
+                </div>
+                <span className="count-subtext">
+                  Start-ups helped by Us
+                </span>
+              </div>
+            </div>
+            <div className="counter-card-block">
+              <div className="counter-card">
+                <div className="count-text">
+                  <span className="counter" data-target="3">
+                    120
+                  </span>
+                  <span>M &nbsp;&nbsp;+</span>
+                </div>
+                <span className="count-subtext">
+                  Fundings Raised
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
           </>
      );
 };
