@@ -9,6 +9,12 @@ import client5 from "src/assets/client-5.svg";
 import client6 from "src/assets/client-6.svg";
 import officepic from "src/assets/office-picture.svg";
 
+import client1 from "src/assets/client-1.svg";
+import client2 from "src/assets/client-2.svg";
+import client3 from "src/assets/client-3.svg";
+import client4 from "src/assets/client-4.svg";
+
+
 const images = [];
 
 export const Home = () => {
@@ -22,6 +28,7 @@ export const Home = () => {
     setHoveredClient(null);
   };
 
+
   const testimonialData = [
     {
       id: 1,
@@ -29,7 +36,7 @@ export const Home = () => {
       position: "New Technologies, CEO",
       testimonial:
         "Lorem ipsum dolor sit amet consectetur. Pulvinar turpis ullamcorper leo consectetur tortor lacus diam amet eros. Quam quam justo ut et pretium viverra convallis. Lacus porttitor venenatis aliquam eu felis vestibulum id. Ut quis ut faucibus at mauris nulla porttitor. ",
-      imageUrl: "src/assets/client-1.svg",
+      imageUrl: client1,
     },
     {
       id: 2,
@@ -37,7 +44,7 @@ export const Home = () => {
       position: "Royal Rumble, CEO",
       testimonial:
         "Lorem ipsum dolor sit amet consectetur. Pulvinar turpis ullamcorper leo consectetur tortor lacus diam amet eros. Quam quam justo ut et pretium viverra convallis. Lacus porttitor venenatis aliquam eu felis vestibulum id. Ut quis ut faucibus at mauris nulla porttitor. ",
-      imageUrl: "src/assets/client-2.svg",
+      imageUrl: client2,
     },
     {
       id: 3,
@@ -45,7 +52,7 @@ export const Home = () => {
       position: "Brand New Technologies, Founder",
       testimonial:
         "Lorem ipsum dolor sit amet consectetur. Pulvinar turpis ullamcorper leo consectetur tortor lacus diam amet eros. Quam quam justo ut et pretium viverra convallis. Lacus porttitor venenatis aliquam eu felis vestibulum id. Ut quis ut faucibus at mauris nulla porttitor. ",
-      imageUrl: "src/assets/client-3.svg",
+      imageUrl: client3,
     },
     {
       id: 4,
@@ -53,7 +60,7 @@ export const Home = () => {
       position: "Riz Technologies, Director",
       testimonial:
         "Lorem ipsum dolor sit amet consectetur. Pulvinar turpis ullamcorper leo consectetur tortor lacus diam amet eros. Quam quam justo ut et pretium viverra convallis. Lacus porttitor venenatis aliquam eu felis vestibulum id. Ut quis ut faucibus at mauris nulla porttitor. ",
-      imageUrl: "src/assets/client-4.svg",
+      imageUrl: client4,
     },
   ];
 
