@@ -3,6 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./Footer.scss";
 import logo from "src/assets/rugr-nest-white-logo.svg";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -12,35 +13,35 @@ export const Footer = () => {
           <div className="footer-block">
             <Row className="align-items-center">
               <Col lg={8} md={12}>
-                <a href="/">
+                <Link to="/">
                   <img
                     loading="lazy"
                     src={logo}
                     className="footer-logo"
                     alt="Rugr Nest logo"
                   />
-                </a>
+                </Link>
                 <div className="footer-btn">
-                  <a href="#">Companies</a>
-                  <a href="#">Our Process</a>
-                  <a href="/about-us">About Us</a>
-                  <a href="#">Our Services</a>
-                  <a href="/testimonials">Testimonials</a>
+                  <Link to="/">Companies</Link>
+                  <Link to="/">Our Process</Link>
+                  <Link to="/about-us">About Us</Link>
+                  <Link to="/">Our Services</Link>
+                  <Link to="/testimonials">Testimonials</Link>
                 </div>
               </Col>
               <Col lg={4} md={12}>
                 <div className="footer-text">partnerships@rugrnest.com</div>
                 <div className="footer-text">1800 410 4555</div>
                 <div className="social-media-block">
-                  <a href="">
+                  <Link to="">
                     <i className="icon-linked-in social-media-icon"></i>
-                  </a>
-                  <a href="">
+                  </Link>
+                  <Link to="">
                     <i className="icon-twitter social-media-icon"></i>
-                  </a>
-                  <a href="">
+                  </Link>
+                  <Link to="">
                     <i className="icon-website social-media-icon"></i>
-                  </a>
+                  </Link>
                 </div>
               </Col>
             </Row>
