@@ -14,7 +14,7 @@ export const Header = () => {
   return (
     <Navbar expand="lg" className="">
       <Container>
-        <Navbar.Brand href="/">
+        <Navbar.Brand to="/">
           <img
             loading="lazy"
             src={logo}
@@ -25,12 +25,12 @@ export const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-lg-auto ms-md-0 flex-md-row">
-            <Nav.Link href="/" className={isActive('/') ? 'active' : ''}>Home</Nav.Link>
-            <Nav.Link href="/about-us" className={isActive('/about-us') ? 'active' : ''}>About Us</Nav.Link>
-            <Nav.Link href="#companies">Companies</Nav.Link>
-            <Nav.Link href="#services">Our Services</Nav.Link>
-            <Nav.Link href="#process">Our Process</Nav.Link>
-            <Nav.Link href="/testimonials" className={isActive('/testimonials') ? 'active' : ''}>Testimonials</Nav.Link>
+            <Nav.Link as={Link} to="/" className={isActive('/') ? 'active' : ''}>Home</Nav.Link>
+            <Nav.Link as={Link} to="/about-us" className={isActive('/about-us') ? 'active' : ''}>About Us</Nav.Link>
+            <Nav.Link as={Link} to="/companies">Companies</Nav.Link>
+            <Nav.Link as={Link} to="/services">Our Services</Nav.Link>
+            <Nav.Link as={Link} to="/process">Our Process</Nav.Link>
+            <Nav.Link as={Link} to="/testimonials" className={isActive('/testimonials') ? 'active' : ''}>Testimonials</Nav.Link>
           </Nav>
           <div className="navbar-btn-section">
             <i className="icon-icon-language"></i>

@@ -36,7 +36,7 @@
             gap: 10px;
             border-radius: 5px;
             font-size: 18px;
-            color: #000;
+            color: #fff;
         }
 
         .text-2 {
@@ -939,6 +939,7 @@
             
         }
 }
+
 }
 @media (min-width: 992px) {
     .form-container {
@@ -1133,6 +1134,36 @@
             }
         }
     }
+}
+
+//for extra large screen
+
+@media only screen and (min-width:1601px ){
+    .banner .banner-content {
+        padding: 0px 12px;
+    }
+
+    .banner {
+        height: 80vh;
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: end;
+    }
+    .banner .banner-content h1 {
+        margin-top: 60px;
+        font-size: 46px;
+
+    }
+    .banner .banner-content p {
+        margin: 30px 0px;
+        margin-top: 45px;
+    }
+    .banner .banner-content .text-2 {
+        font-size: 18px;
+    }
+
 }
 
 // Media query ends here 
