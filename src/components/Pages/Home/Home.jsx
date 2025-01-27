@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col, Button, Dropdown  } from "react-bootstrap";
+import PhoneInput from 'react-phone-number-input';
+import 'react-phone-number-input/style.css';
 import "./Home.scss";
 
 // images
@@ -63,6 +65,8 @@ export const Home = () => {
       imageUrl: client4,
     },
   ];
+
+  const [value, setValue] = useState()
 
   return (
     <>
@@ -332,10 +336,11 @@ export const Home = () => {
                 <label for="" className="form-label">
                   Phone No. <span className="text-danger">*</span>
                 </label>
-                <input
-                  type="text"
+                <PhoneInput
                   className="form-input"
-                  placeholder="Enter Your Phone Number"
+                  placeholder="Enter Your Mobile Number"
+                  value={value}
+                  onChange={setValue}
                 />
               </div>
               <div className="form-block">
@@ -381,14 +386,9 @@ export const Home = () => {
                 <label for="" className="form-label">
                   Country <span className="text-danger">*</span>
                 </label>
-                <div className="dropdown product-dropdown">
-                  <button
-                    className="btn btn-secondary dropdown-toggle"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <span className="d-inline-flex">Select the product</span>
+                <Dropdown className="product-dropdown">
+                  <Dropdown.Toggle variant="success" id="dropdown-basic">
+                  <span className="d-inline-flex">Select Your Country</span>
                     <div className="d-flex">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -405,59 +405,52 @@ export const Home = () => {
                         />
                       </svg>
                     </div>
-                  </button>
-                  <ul className="dropdown-menu">
-                    <li>
-                      <a className="dropdown-item">Card Issuance</a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item">Banking</a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item">Payment Services</a>
-                    </li>
-                  </ul>
-                </div>
+                  </Dropdown.Toggle>
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">
+                      Another action
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#/action-3">
+                      Something else
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
               </div>
               <div className="form-block">
                 <label for="" className="form-label">
                   Looking For <span className="text-danger">*</span>
                 </label>
-                <div className="dropdown product-dropdown">
-                  <button
-                    className="btn btn-secondary dropdown-toggle"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <span>Select the product</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="40"
-                      height="40"
-                      viewBox="0 0 57 56"
-                      fill="none"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M30.2495 33.918C29.812 34.3554 29.2186 34.6012 28.5999 34.6012C27.9811 34.6012 27.3878 34.3554 26.9502 33.918L20.3492 27.317C20.0228 26.9905 19.8006 26.5746 19.7107 26.1218C19.6208 25.669 19.6672 25.1998 19.844 24.7734C20.0209 24.347 20.3203 23.9826 20.7042 23.7264C21.0882 23.4702 21.5396 23.3336 22.0012 23.334H35.1985C35.6601 23.3336 36.1115 23.4702 36.4955 23.7264C36.8794 23.9826 37.1788 24.347 37.3557 24.7734C37.5325 25.1998 37.5789 25.669 37.489 26.1218C37.3991 26.5746 37.1769 26.9905 36.8505 27.317L30.2495 33.918Z"
-                        fill="#189B73"
-                      />
-                    </svg>
-                  </button>
-                  <ul className="dropdown-menu">
-                    <li>
-                      <a className="dropdown-item">Card Issuance</a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item">Banking</a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item">Payment Services</a>
-                    </li>
-                  </ul>
-                </div>
+                <Dropdown className="product-dropdown">
+                  <Dropdown.Toggle variant="success" id="dropdown-basic">
+                  <span className="d-inline-flex">Select Your Services</span>
+                    <div className="d-flex">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="40"
+                        height="40"
+                        viewBox="0 0 57 56"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M30.2495 33.918C29.812 34.3554 29.2186 34.6012 28.5999 34.6012C27.9811 34.6012 27.3878 34.3554 26.9502 33.918L20.3492 27.317C20.0228 26.9905 19.8006 26.5746 19.7107 26.1218C19.6208 25.669 19.6672 25.1998 19.844 24.7734C20.0209 24.347 20.3203 23.9826 20.7042 23.7264C21.0882 23.4702 21.5396 23.3336 22.0012 23.334H35.1985C35.6601 23.3336 36.1115 23.4702 36.4955 23.7264C36.8794 23.9826 37.1788 24.347 37.3557 24.7734C37.5325 25.1998 37.5789 25.669 37.489 26.1218C37.3991 26.5746 37.1769 26.9905 36.8505 27.317L30.2495 33.918Z"
+                          fill="#189B73"
+                        />
+                      </svg>
+                    </div>
+                  </Dropdown.Toggle>
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">
+                      Another action
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#/action-3">
+                      Something else
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
               </div>
               <div className="form-block">
                 <label for="" className="form-label">
