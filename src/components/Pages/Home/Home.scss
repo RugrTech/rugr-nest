@@ -41,8 +41,8 @@
 
         .text-2 {
             color: #000;
-            font-family: Avenir;
-            font-size: 16px;
+            font-family:var(--secondary-font);
+            font-size: 15px;
             font-style: normal;
             font-weight: 400;
             line-height: 150%;
@@ -1138,13 +1138,13 @@
 
 //for extra large screen
 
-@media only screen and (min-width:1601px ){
+@media only screen and (min-width:1601px){
     .banner .banner-content {
         padding: 0px 12px;
     }
 
     .banner {
-        height: 80vh;
+        height: 65vh;
         background-size: cover;
         background-position:center;
         background-repeat: no-repeat;
@@ -1161,9 +1161,13 @@
         margin-top: 45px;
     }
     .banner .banner-content .text-2 {
-        font-size: 18px;
+        font-size: 15px;
     }
 
+    .contact-us-section .contact-right-section .counter-card-container .counter-card-block .count-text {
+        word-spacing: -8px;
+    }
+    
 }
 
 // Media query ends here 

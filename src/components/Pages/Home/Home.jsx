@@ -81,7 +81,7 @@ export const Home = () => {
                   ideas into impactful products. Get in touch with us and let’s
                   grow together.{" "}
                 </p>
-                <a href="#">Let’s Grow</a>
+                <a href="#" className="primary-btn">Let’s Grow</a>
                 <p className="text-2">
                   Experienced the streamlined support from <br />{" "}
                   <span>Rugr</span> Nest and build a brand for yourself
