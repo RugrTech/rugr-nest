@@ -31,7 +31,7 @@ export const Footer = () => {
               </Col>
               <Col lg={4} md={12}>
                 <div className="footer-text">partnerships@rugrnest.com</div>
-                <div className="footer-text">1800 410 4555</div>
+                <div className="footer-text">1800 410 4555 </div> 
                 <div className="social-media-block">
                   <Link to="">
                     <i className="icon-linked-in social-media-icon"></i>
